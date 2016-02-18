@@ -22,3 +22,6 @@ underscore
 kadira:flow-router
 aldeed:collection2
 twbs:bootstrap
+kadira:blaze-layout
+less
+manuel:viewmodel

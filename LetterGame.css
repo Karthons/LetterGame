@@ -1,1 +1,24 @@
 /* CSS declarations go here */
+.square{
+    text-align: center;
+    padding: 5px;
+    background-color: gray;
+    font-size: 20px;
+    border: solid white 1px;
+    color: white;
+}
+
+.grid{
+    margin-left: 50px;
+    width: 300px;
+    height: auto;
+    border: solid darkslategrey 5px;
+}
+
+.inputLookup{
+
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-content: center;
+    margin-left: 30px;
+}
