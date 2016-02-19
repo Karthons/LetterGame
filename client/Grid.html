@@ -1,10 +1,10 @@
 <template name="Grid">
     <div class="grid">
-        {{#each letter in getLetters }}
-            {{> squareLetter letter=letter}}
+        {{#each lettersObject in getLetters }}
+            {{> squareLetter lettersObject=lettersObject}}
         {{/each}}
 
         <input type="text" {{b "value: text"}} class="inputLookup" name="inputLookup">
-        {{textValidated}}
+        {{textValidated getLetters}}
     </div>
 </template>
