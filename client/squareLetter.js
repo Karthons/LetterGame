@@ -1,21 +1,22 @@
 /**
  * Created by Simon on 18/02/2016.
  */
-Template.squareLetter.helpers({
-    selected: function(){
-
-    },
-    getValue: function(lettersObject){
-
-    }
+Template.squareLetter.onCreated(function(){
+    this.selected = false;
 });
 
-Template.squareLetter.viewmodel({
-    selected: false,
+Template.squareLetter.onRendered(function(){
+    this.selected = false;
+});
 
-    styles: {
-       selected: {
-           "background-color": "brown",
-       }
+Template.squareLetter.helpers({
+    getValue: function(lettersObject){
+
+    },
+    test: function(a) {
+        console.log(a);
+    },
+    selected:function(){
+     return Template.instance().selected;
     }
 });

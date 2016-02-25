@@ -2,7 +2,6 @@
 .square{
     text-align: center;
     padding: 5px;
-    background-color: gray;
     font-size: 20px;
     border: solid white 1px;
     color: white;
@@ -21,4 +20,12 @@
     margin-top: 5px;
     align-content: center;
     margin-left: 30px;
+}
+
+.selected{
+    background-color: brown;
+}
+
+.unselected{
+    background-color: gray;
 }

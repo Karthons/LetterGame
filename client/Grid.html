@@ -1,7 +1,7 @@
 <template name="Grid">
     <div class="grid">
-        {{#each lettersObject in getLetters }}
-            {{> squareLetter lettersObject=lettersObject}}
+        {{#each letter in getLetters }}
+            {{> squareLetter letter=letter selected=selected}}
         {{/each}}
 
         <input type="text" {{b "value: text"}} class="inputLookup" name="inputLookup">
