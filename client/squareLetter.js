@@ -10,13 +10,19 @@ Template.squareLetter.onRendered(function(){
 });
 
 Template.squareLetter.helpers({
-    getValue: function(lettersObject){
-
+    getLetter: function(lettersObject){
+        return lettersObject[0];
     },
     test: function(a) {
         console.log(a);
     },
     selected:function(){
      return Template.instance().selected;
+    },
+    isTrue: function(boolean){
+    if(boolean === true){
+        return true
+    }else
+        return false;
     }
 });

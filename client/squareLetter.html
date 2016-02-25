@@ -1,7 +1,7 @@
 <template name="squareLetter">
-    {{#if selected }}
-    <div  class="col-md-3 col-sm-3 col-xs-3 col-lg-3 square selected">{{ letter }} </div>
+    {{#if isTrue letterObject.selected }}
+    <div  class="col-md-3 col-sm-3 col-xs-3 col-lg-3 square selected">{{ letterObject.letter}} </div>
     {{else}}
-    <div  class="col-md-3 col-sm-3 col-xs-3 col-lg-3 square unselected">{{ letter }} </div>
+    <div  class="col-md-3 col-sm-3 col-xs-3 col-lg-3 square unselected">{{ letterObject.letter}} </div>
     {{/if}}
 </template>
